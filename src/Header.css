@@ -1,3 +1,38 @@
-#navbar{
-    background-color: violet;
+.Header{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    background-color: #FEBD2E;
+}
+.navigation{
+    height: 10vh;
+    background-color: #FEBD2E;
+    width: 100%;
+    margin: 1px;
+}
+.nav_css{
+    background-color: #FEBD2E;
+    height: 100%;
+    justify-content: space-between;
+}
+.menu{
+
+    justify-content: space-between;
+    color: white;
+   width: 60%;
+    margin-left: 40%;
+}
+.menu_items{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    font-family: Roboto, serif;
+}
+.menu_item{
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
 }
