@@ -2,7 +2,7 @@
     width: 100%;
     margin: 0;
     padding: 0;
-    height: auto;
+    height: 10vh;
 
 }
 .navigation{
@@ -15,58 +15,67 @@
     font-family: Montserrat;
 }
 .menu_items{
-    color: #635A50;
+    color: #181108;
     font-family: Montserrat;
-
     font-weight: bold;
 }
 .navigation_items{
     margin-left:5%;
-    width: 50%;
+    width: 60%;
     justify-content: space-between;
 }
-button {
-    width: 10em;
+.button {
+    display: flex;
+}
+
+.box {
+    width: 35px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    transition: all .8s;
+    cursor: pointer;
     position: relative;
-    height: 3.5em;
-    border: 3px ridge #149CEA;
-    outline: none;
-    background-color: transparent;
-    color: #635A50;
-    transition: 1s;
-    border-radius: 0.3em;
-    font-size: 16px;
-    font-weight: bold;
+    background: #F28A4B;
+    overflow: hidden;
 }
 
-button::after {
-    content: "";
+.box:before {
+    content: "L";
     position: absolute;
-    top: -10px;
-    left: 3%;
-    width: 95%;
-    height: 40%;
-    background-color: #FFFFFF;
-    transition: 0.5s;
-    transform-origin: center;
+    top: 0;
+    background: #0f0f0f;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(100%);
+    transition: transform .4s;
 }
 
-button::before {
-    content: "";
-    transform-origin: center;
-    position: absolute;
-    top: 80%;
-    left: 3%;
-    width: 95%;
-    height: 40%;
-    background-color: #FFFFFF;
-    transition: 0.5s;
+.box:nth-child(2)::before {
+    transform: translateY(-100%);
+    content: 'O';
 }
 
-button:hover::before, button:hover::after {
-    transform: scale(0)
+.box:nth-child(3)::before {
+    content: 'G';
 }
 
-button:hover {
-    box-shadow: inset 0px 0px 25px #1479EA;
+.box:nth-child(4)::before {
+    transform: translateY(-100%);
+    content: 'I';
+}
+
+.box:nth-child(5)::before {
+    content: 'N';
+}
+
+.button:hover .box:before {
+    transform: translateY(0);
 }

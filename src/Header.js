@@ -12,7 +12,7 @@ function Header(){
             <nav className="navigation">
                 <Navbar expand="lg" className="bg-body-tertiary">
                     <Container fluid>
-                        <Navbar.Brand className={"brand"} href="#">Navbar scroll</Navbar.Brand>
+                        <Navbar.Brand className={"brand"} href="#">Bon<span style={{color:"#F28A4B"}}>appétit</span></Navbar.Brand>
                         <Navbar.Toggle aria-controls="navbarScroll" />
                         <Navbar.Collapse id="navbarScroll" className={"navigation_items"}>
                             <Nav
@@ -35,9 +35,13 @@ function Header(){
                                 <Nav.Link className={"menu_items"} href="#" >Fridge</Nav.Link>
                                 <Nav.Link className={"menu_items"} href="#" >Nutrition</Nav.Link>
                             </Nav>
-                            <button>
-                                Get Started
-                            </button>
+                            <div className="button">
+                                <div className="box">H</div>
+                                <div className="box">E</div>
+                                <div className="box">L</div>
+                                <div className="box">L</div>
+                                <div className="box">O</div>
+                            </div>
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>
