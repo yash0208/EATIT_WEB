@@ -3,36 +3,70 @@
     margin: 0;
     padding: 0;
     height: auto;
-    background-color: #FEBD2E;
+
 }
 .navigation{
-    height: 10vh;
-    background-color: #FEBD2E;
-    width: 100%;
-    margin: 1px;
+    padding-left: 5%;
+    padding-right: 5%;
 }
-.nav_css{
-    background-color: #FEBD2E;
-    height: 100%;
-    justify-content: space-between;
-}
-.menu{
-
-    justify-content: space-between;
-    color: white;
-   width: 60%;
-    margin-left: 40%;
+.brand{
+    color: #282c34;
+    font-weight: bolder;
+    font-family: Montserrat;
 }
 .menu_items{
-    color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    font-family: Roboto, serif;
+    color: #635A50;
+    font-family: Montserrat;
+
+    font-weight: bold;
 }
-.menu_item{
-    text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-    color: black;
+.navigation_items{
+    margin-left:5%;
+    width: 50%;
+    justify-content: space-between;
+}
+button {
+    width: 10em;
+    position: relative;
+    height: 3.5em;
+    border: 3px ridge #149CEA;
+    outline: none;
+    background-color: transparent;
+    color: #635A50;
+    transition: 1s;
+    border-radius: 0.3em;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: #FFFFFF;
+    transition: 0.5s;
+    transform-origin: center;
+}
+
+button::before {
+    content: "";
+    transform-origin: center;
+    position: absolute;
+    top: 80%;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: #FFFFFF;
+    transition: 0.5s;
+}
+
+button:hover::before, button:hover::after {
+    transform: scale(0)
+}
+
+button:hover {
+    box-shadow: inset 0px 0px 25px #1479EA;
 }

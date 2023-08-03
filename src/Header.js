@@ -4,23 +4,40 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {Button, Form} from "react-bootstrap";
 function Header(){
     return (
         <div className="Header">
 
             <nav className="navigation">
-                <Navbar expand={"lg"} className={"nav_css justify-content-between"}>
-                    <Container className={"nav_container"}>
-                        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-                        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                        <Navbar.Collapse className="menu" id="basic-navbar-nav">
-                            <div className="menu_items">
-                                <a className="menu_item" href="#home">Home</a>
-                                <a className="menu_item" href="#link">Meal Planner</a>
-                                <a className="menu_item" href="#link">Videos</a>
-                                <a className="menu_item" href="#link">Fridge</a>
-                                <a className="menu_item" href="#link">Account</a>
-                            </div>
+                <Navbar expand="lg" className="bg-body-tertiary">
+                    <Container fluid>
+                        <Navbar.Brand className={"brand"} href="#">Navbar scroll</Navbar.Brand>
+                        <Navbar.Toggle aria-controls="navbarScroll" />
+                        <Navbar.Collapse id="navbarScroll" className={"navigation_items"}>
+                            <Nav
+                                className="me-auto my-2 my-lg-0"
+                                style={{ maxHeight: 'fit-content' }}
+                                navbarScroll
+                            >
+                                <NavDropdown className={"menu_items"} title="Recipes" id="navbarScrollingDropdown">
+                                    <NavDropdown.Item href="#action3">15-minutes-or-less</NavDropdown.Item>
+                                    <NavDropdown.Item href="#action4">
+                                        weeknight
+                                    </NavDropdown.Item>
+                                    <NavDropdown.Divider />
+                                    <NavDropdown.Item href="#action5">
+                                        pies-and-tarts
+                                    </NavDropdown.Item>
+                                </NavDropdown>
+                                <Nav.Link className={"menu_items"} href="#action1">Meal Planner</Nav.Link>
+                                <Nav.Link className={"menu_items"} href="#action2">Videos</Nav.Link>
+                                <Nav.Link className={"menu_items"} href="#" >Fridge</Nav.Link>
+                                <Nav.Link className={"menu_items"} href="#" >Nutrition</Nav.Link>
+                            </Nav>
+                            <button>
+                                Get Started
+                            </button>
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>
