@@ -2,12 +2,17 @@
     width: 100%;
     margin: 0;
     padding: 0;
-    height: 10vh;
+    height: max-content;
 
 }
 .navigation{
     padding-left: 5%;
+    height: max-content;
     padding-right: 5%;
+}
+.nav1{
+    height: max-content;
+    background-color: transparent;
 }
 .brand{
     color: #282c34;

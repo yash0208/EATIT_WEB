@@ -10,7 +10,7 @@ function Header(){
         <div className="Header">
 
             <nav className="navigation">
-                <Navbar expand="lg" className="bg-body-tertiary">
+                <Navbar expand="lg" className="nav1 bg-body-tertiary">
                     <Container fluid>
                         <Navbar.Brand className={"brand"} href="#">Bon<span style={{color:"#F28A4B"}}>appétit</span></Navbar.Brand>
                         <Navbar.Toggle aria-controls="navbarScroll" />
